@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: #c9d6ff;
+  background: linear-gradient(to right, #e2e2e2, #c9d6ff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+.container {
+  background: #fff;
+  width: 700px; /* Adjusted width */
+  padding: 3rem; /* Increased padding */
+  border-radius: 15px;
+  box-shadow: 0 25px 40px rgba(0, 0, 1, 0.2); /* Reduced shadow intensity */
+  text-align: center; /* Align all content to center */
+}
+form {
+  margin: 0 auto; /* Center the form */
+}
+.form-title {
+  font-size: 3rem; /* Large font size for title */
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+.input-group {
+  position: relative;
+  margin-bottom: 1.5rem; /* Spacing between inputs */
+}
+.input-group i {
+  position: absolute;
+  color: black;
+  font-size: 1.5rem;
+  top: 50%;
+  left: 1rem;
+  transform: translateY(-50%);
+}
+input {
+  width: 100%;
+  padding: 1rem 1.5rem 1rem 3rem; /* Added padding for icons */
+  font-size: 1.5rem;
+  border: none;
+  border-bottom: 2px solid #757575;
+  outline: none;
+}
+input:focus {
+  border-bottom: 3px solid hsl(327, 90%, 28%);
+}
+label {
+  position: absolute;
+  top: -1rem;
+  left: 3rem;
+  font-size: 1.2rem;
+  color: #757575;
+  pointer-events: none;
+  transition: 0.3s;
+}
+input:focus ~ label,
+input:not(:placeholder-shown) ~ label {
+  color: hsl(327, 90%, 28%);
+}
+.recover {
+  text-align: right;
+  margin-bottom: 2rem;
+}
+.recover a {
+  text-decoration: none;
+  color: rgb(125, 125, 235);
+  font-size: 1.2rem;
+}
+button {
+  font-size: 1.5rem;
+  padding: 15px 0;
+  border-radius: 8px;
+  border: none;
+  width: 100%;
+  background: rgb(125, 125, 235);
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+button:hover {
+  background: #07001f;
+}
+.or {
+  font-size: 1.3rem;
+  margin: 2rem 0; /* Space above and below */
+}
+.icons {
+  display: flex;
+  justify-content: center;
+  gap: 2rem; /* Spacing between icons */
+}
+.icons i {
+  color: rgb(125, 125, 235);
+  padding: 1rem;
+  border-radius: 10px;
+  font-size: 2rem;
+  cursor: pointer;
+  border: 3px solid #dfe9f5;
+  transition: 0.3s;
+}
+.icons i:hover {
+  background: #07001f;
+  border-color: rgb(125, 125, 235);
+}
+.links {
+  margin-top: 2rem;
+  font-size: 1.2rem;
+}
+.links span {
+  margin-right: 1rem;
+}
+#signUpButton {
+  color: rgb(125, 125, 235);
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+#signUpButton:hover {
+  text-decoration: underline;
+}
